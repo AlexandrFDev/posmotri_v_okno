@@ -30,7 +30,7 @@ html {
 .button {
   cursor: pointer;
   padding: 6px;
-  font-family: Fira Sans Condensed, serif;
+  font-family: Fira Sans Condensed, sans-serif ;
   font-size: 18px;
   font-weight: 700;
   line-height: 21.6px;
@@ -87,9 +87,17 @@ fieldset {
   width: 711px;
   height: 386px;
   margin-bottom: 16px;
-}
+} /* Я могу использовать min или max,
+ но здесь сказано в задании растянуть
+ видео по всей ширине и высоте блока,
+ поэтому придется поставить на видео
+ уже 100% по ширине и высоте, приэтом еще object-fit
+ Но даже при max и min ширине и высоте при запуске
+  видео почему-то меняется размер элемента <video>
+  из-за этого смещается верстка. Мне это не
+  поравилось и я это убрал. */
 
-video {
+.result__video {
   height: 100%;
   width: 100%;
   object-fit: cover;
@@ -123,12 +131,15 @@ video {
   height: 298px;
   width: 399px;
   overflow-y: scroll;
+  overflow-x: hidden;
   position: relative;
 }
 
-.content__list::-webkit-scrollbar {
-  display: none;
-}
+/*.content__list::-webkit-scrollbar {*/
+/*  display: none;*/
+/*}
+ Но вообще в самом задании на сайте в видео скрыт скролл :)
+*/
 
 .more-button {
   width: 100%;

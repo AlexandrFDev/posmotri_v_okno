@@ -120,7 +120,7 @@ fieldset {
 }
 
 .search-form__fieldset-title {
-  font-family: Fira Sans Condensed, serif;
+  font-family: Fira Sans Condensed, sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 21.6px;
@@ -158,7 +158,7 @@ li:has(:focus-visible):not(:has(.content__list-item)) {
   color: #fff;
   font-size: 18px;
   font-weight: 400;
-  font-family: Fira Sans Condensed, serif;
+  font-family: Fira Sans Condensed, sans-serif;
   line-height: 21.6px;
 }
 .search-form__checkbox-list > .search-form__label:hover{
@@ -224,7 +224,7 @@ li:has(:focus-visible):not(:has(.content__list-item)) {
 
 .title{
   margin-bottom: 26px;
-  font-family: Oswald, serif;
+  font-family: Oswald, sans-serif;
   font-weight: 700;
   font-size: 75px;
   line-height: 70.5px;
